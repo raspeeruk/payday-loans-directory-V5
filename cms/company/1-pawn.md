@@ -10,6 +10,6 @@ f_locations:
 - cms/payday-loans/1-pawn-5.md
 f_states:
 - cms/state/virginia.md
-layout: '[companies].html'
-tags: companies
+layout: '[company].html'
+tags: company
 ---
