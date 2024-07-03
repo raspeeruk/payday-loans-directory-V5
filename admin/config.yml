@@ -87,6 +87,57 @@ collections:
             name: additional_tags
             widget: text
             required: false
+  - name: resources
+    label: Resources
+    folder: cms/resources
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - label: Text
+        name: body
+        widget: markdown
+        required: false
+      - hint: ''
+        name: f_meta-description
+        label: Meta Description
+        widget: string
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: resources
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[resources].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+    editor:
+      preview: false
   - name: city
     label: City, States
     folder: cms/city
@@ -141,6 +192,11 @@ collections:
         display_fields:
           - title
         multiple: true
+      - hint: ''
+        name: f_city
+        label: City
+        widget: string
+        required: false
       - label: Tags
         widget: hidden
         name: tags
@@ -505,101 +561,1814 @@ collections:
             name: title
             widget: hidden
             default: Texts
-          - hint: 'Original text: Home, key: 2268ff'
+          - hint: 'Original text: States, key: -6bcd45de'
             label: Text
-            name: 2268ff
+            name: '-6bcd45de'
             widget: string
-          - hint: 'Original text: Products, key: -37f9ca7c'
+          - hint: 'Original text: Cities, key: 7852a769'
             label: Text
-            name: '-37f9ca7c'
+            name: 7852a769
+            widget: string
+          - hint: 'Original text: Companies, key: 233c01bb'
+            label: Text
+            name: 233c01bb
             widget: string
           - hint: 'Original text: Resources, key: 13ede05'
             label: Text
             name: 13ede05
             widget: string
-          - hint: 'Original text: Blog, key: 1fa3c2'
+          - hint: 'Original text: About, key: 3c2336d'
             label: Text
-            name: 1fa3c2
-            widget: string
-          - hint: >-
-              Original text: The latest industry news, updates and info., key:
-              -1eac165e
-            label: Text
-            name: '-1eac165e'
-            widget: string
-          - hint: 'Original text: Customer stories, key: 53250231'
-            label: Text
-            name: '53250231'
-            widget: string
-          - hint: >-
-              Original text: Learn how our customers are making big changes.,
-              key: -774bb977
-            label: Text
-            name: '-774bb977'
-            widget: string
-          - hint: 'Original text: Video tutorials, key: -7a95ecb0'
-            label: Text
-            name: '-7a95ecb0'
-            widget: string
-          - hint: >-
-              Original text: Get up and running on new features and techniques.,
-              key: -4ca204a5
-            label: Text
-            name: '-4ca204a5'
-            widget: string
-          - hint: 'Original text: Documentation, key: -71c2ed66'
-            label: Text
-            name: '-71c2ed66'
-            widget: string
-          - hint: >-
-              Original text: All the boring stuff that you (hopefully won’t)
-              need., key: -630bf2f
-            label: Text
-            name: '-630bf2f'
-            widget: string
-          - hint: 'Original text: Help and support, key: 5839b447'
-            label: Text
-            name: 5839b447
-            widget: string
-          - hint: >-
-              Original text: Learn, fix a problem, and get answers to your
-              questions., key: 6058a8d8
-            label: Text
-            name: 6058a8d8
-            widget: string
-          - hint: 'Original text: Pricing, key: 507137a6'
-            label: Text
-            name: 507137a6
+            name: 3c2336d
             widget: string
           - hint: 'Original text: Log in, key: -7804285f'
             label: Text
             name: '-7804285f'
             widget: string
-          - hint: 'Original text: Sign up, key: -204ff442'
+          - hint: "Original text: Get A\_Loan, key: 660bd239"
             label: Text
-            name: '-204ff442'
+            name: 660bd239
             widget: string
-          - hint: "Original text: Apply\_Now, key: -423d59c"
+          - hint: 'Original text: Short Term Loans, key: -739530ed'
             label: Text
-            name: '-423d59c'
+            name: '-739530ed'
             widget: string
-          - hint: 'Original text: Payday Loans Stores, key: -6b940445'
+          - hint: "Original text: Get Money\_Today, key: -718412c9"
             label: Text
-            name: '-6b940445'
+            name: '-718412c9'
             widget: string
           - hint: >-
-              Original text: We have a comprehensive list of Florida pa, key:
-              -519e7234
+              Original text: Find a short term loan near you today, key:
+              4d7c85ae
             label: Text
-            name: '-519e7234'
+            name: 4d7c85ae
+            widget: string
+          - hint: >-
+              Original text: We have the most comprehensive list of short term
+              loans providers in the US., key: -2f5cc4ea
+            label: Text
+            name: '-2f5cc4ea'
+            widget: string
+          - hint: "Original text: Find A\_Store, key: -70eb6ba5"
+            label: Text
+            name: '-70eb6ba5'
+            widget: string
+          - hint: 'Original text: Features, key: -d78b7a3'
+            label: Text
+            name: '-d78b7a3'
+            widget: string
+          - hint: "Original text: Payday\_Loans Near You, key: -21d5c9b0"
+            label: Text
+            name: '-21d5c9b0'
+            widget: string
+          - hint: >-
+              Original text: Use our directory to find an online loan that works
+              for you - from the palm of your hand., key: -70a63a5c
+            label: Text
+            name: '-70a63a5c'
+            widget: string
+          - hint: 'Original text: Find a Loan, key: 763a2596'
+            label: Text
+            name: 763a2596
+            widget: string
+          - hint: "Original text: We have a record of over 29,000 payday loan stores in the\_USA.\_Find what works for you., key: -694f03ba"
+            label: Text
+            name: '-694f03ba'
+            widget: string
+          - hint: 'Original text: Apply Online or In-store, key: -3072a025'
+            label: Text
+            name: '-3072a025'
+            widget: string
+          - hint: >-
+              Original text: If you can't get to your local fast cash store we
+              can process your application online., key: -1ed0a065
+            label: Text
+            name: '-1ed0a065'
+            widget: string
+          - hint: 'Original text: Quick decision, key: -5aaef31'
+            label: Text
+            name: '-5aaef31'
+            widget: string
+          - hint: >-
+              Original text: We will give you a quick online decision or give
+              you directions to the store closest to you., key: -7329848a
+            label: Text
+            name: '-7329848a'
+            widget: text
+          - hint: 'Original text: Cash in the bank, key: 3725d7d9'
+            label: Text
+            name: 3725d7d9
+            widget: string
+          - hint: >-
+              Original text: You can get cash in the bank within 24 hours ready
+              to help with whatever you need it for., key: 72e775b2
+            label: Text
+            name: 72e775b2
+            widget: string
+          - hint: 'Original text: Get started, key: 667a5d97'
+            label: Text
+            name: 667a5d97
+            widget: string
+          - hint: 'Original text: Learn more, key: -52aefc2f'
+            label: Text
+            name: '-52aefc2f'
+            widget: string
+          - hint: 'Original text: Loans Near You, key: -2beaa9bc'
+            label: Text
+            name: '-2beaa9bc'
+            widget: string
+          - hint: >-
+              Original text: Find a payday loan location that works for you,
+              key: -5591538e
+            label: Text
+            name: '-5591538e'
+            widget: string
+          - hint: >-
+              Original text: We've built our directory to cover ever town and
+              city in the US so you'll be sure to find somewhere that works for
+              you., key: -10f70a5f
+            label: Text
+            name: '-10f70a5f'
+            widget: text
+          - hint: "Original text: Get A\_Loan >>, key: 39a55707"
+            label: Text
+            name: 39a55707
+            widget: string
+          - hint: 'Original text: Our blog, key: 2f8416'
+            label: Text
+            name: 2f8416
+            widget: string
+          - hint: 'Original text: Latest blog posts, key: 1dcadbee'
+            label: Text
+            name: 1dcadbee
+            widget: string
+          - hint: >-
+              Original text: Tool and strategies modern teams need to help their
+              companies grow., key: -34fa54a7
+            label: Text
+            name: '-34fa54a7'
+            widget: string
+          - hint: 'Original text: View all posts, key: bda6cf9'
+            label: Text
+            name: bda6cf9
+            widget: string
+          - hint: 'Original text: Priya Patel, key: -7fe74f27'
+            label: Text
+            name: '-7fe74f27'
             widget: string
           - hint: 'Original text: No items found., key: 3d503d2b'
             label: Text
             name: 3d503d2b
             widget: string
-          - hint: 'Original text: Cities, key: 7852a769'
+          - hint: >-
+              Original text: Connecting You to Your Financial Future, key:
+              693b730b
             label: Text
-            name: 7852a769
+            name: 693b730b
+            widget: string
+          - hint: 'Original text: Home, key: 2268ff'
+            label: Text
+            name: 2268ff
+            widget: string
+          - hint: 'Original text: Apply Now, key: -45e051c'
+            label: Text
+            name: '-45e051c'
+            widget: string
+          - hint: 'Original text: Careers, key: -7bc27f6b'
+            label: Text
+            name: '-7bc27f6b'
+            widget: string
+          - hint: 'Original text: New, key: 13180'
+            label: Text
+            name: '13180'
+            widget: string
+          - hint: 'Original text: Contact Us, key: 7f2746de'
+            label: Text
+            name: 7f2746de
+            widget: string
+          - hint: 'Original text: Sitemap, key: -1f9bbb6b'
+            label: Text
+            name: '-1f9bbb6b'
+            widget: string
+          - hint: 'Original text: FAQs, key: 20d03d'
+            label: Text
+            name: 20d03d
+            widget: string
+          - hint: 'Original text: Accessibility Policy, key: 7323f884'
+            label: Text
+            name: 7323f884
+            widget: string
+          - hint: 'Original text: California Consumer Privacy Act, key: -6f130508'
+            label: Text
+            name: '-6f130508'
+            widget: string
+          - hint: 'Original text: Do Not Sell My Personal Information, key: -7ab4be6c'
+            label: Text
+            name: '-7ab4be6c'
+            widget: string
+          - hint: 'Original text: © , key: 1497'
+            label: Text
+            name: '1497'
+            widget: string
+          - hint: 'Original text: XXXX, key: 295600'
+            label: Text
+            name: '295600'
+            widget: string
+          - hint: 'Original text:  Quidzu. All rights reserved., key: -411bbd18'
+            label: Text
+            name: '-411bbd18'
+            widget: string
+          - hint: 'Original text: Terms, key: 4cf5967'
+            label: Text
+            name: 4cf5967
+            widget: string
+          - hint: 'Original text: Privacy , key: -41424e48'
+            label: Text
+            name: '-41424e48'
+            widget: string
+          - hint: 'Original text: Visit Us, key: 624d91d3'
+            label: Text
+            name: 624d91d3
+            widget: string
+          - hint: 'Original text: Phone, key: 4984d4e'
+            label: Text
+            name: 4984d4e
+            widget: string
+          - hint: 'Original text: Address, key: 1ed033d4'
+            label: Text
+            name: 1ed033d4
+            widget: string
+          - hint: 'Original text: Go, key: 908'
+            label: Text
+            name: '908'
+            widget: string
+          - hint: 'Original text: Visit, key: 4ed5d2b'
+            label: Text
+            name: 4ed5d2b
+            widget: string
+          - hint: 'Original text: Payday Loans, key: -3440c3a9'
+            label: Text
+            name: '-3440c3a9'
+            widget: string
+          - hint: 'Original text: Get a short term loan today., key: -8b2540a'
+            label: Text
+            name: '-8b2540a'
+            widget: string
+          - hint: 'Original text: See Cities, key: -3c3fc40a'
+            label: Text
+            name: '-3c3fc40a'
+            widget: string
+          - hint: 'Original text: Across the USA, key: -6a73e54d'
+            label: Text
+            name: '-6a73e54d'
+            widget: string
+          - hint: 'Original text: Search by City, key: 4d9ab55c'
+            label: Text
+            name: 4d9ab55c
+            widget: string
+          - hint: 'Original text: Find payday loans by city., key: 5d4335bc'
+            label: Text
+            name: 5d4335bc
+            widget: string
+          - hint: 'Original text: Go >>, key: 41b79d8'
+            label: Text
+            name: 41b79d8
+            widget: string
+          - hint: 'Original text: Search by State, key: 66a226c0'
+            label: Text
+            name: 66a226c0
+            widget: string
+          - hint: 'Original text: Find payday loans by state., key: 67035f44'
+            label: Text
+            name: 67035f44
+            widget: string
+          - hint: 'Original text: See States, key: -205fb151'
+            label: Text
+            name: '-205fb151'
+            widget: string
+          - hint: 'Original text: Search by Location, key: -4d85a4da'
+            label: Text
+            name: '-4d85a4da'
+            widget: string
+          - hint: >-
+              Original text: Find payday loans by a specific location., key:
+              -407ba6ef
+            label: Text
+            name: '-407ba6ef'
+            widget: string
+          - hint: 'Original text: See Locations, key: -2aef846f'
+            label: Text
+            name: '-2aef846f'
+            widget: string
+          - hint: 'Original text: Previous, key: -4811e0e9'
+            label: Text
+            name: '-4811e0e9'
+            widget: string
+          - hint: 'Original text: Next, key: 24ff13'
+            label: Text
+            name: 24ff13
+            widget: string
+          - hint: 'Original text: Search by Company, key: -f913114'
+            label: Text
+            name: '-f913114'
+            widget: string
+          - hint: 'Original text: Find payday loans by company., key: 41579f18'
+            label: Text
+            name: 41579f18
+            widget: string
+          - hint: 'Original text: Find A Store, key: -4b57bb25'
+            label: Text
+            name: '-4b57bb25'
+            widget: string
+          - hint: 'Original text: About Quidzu, key: -1d8f8613'
+            label: Text
+            name: '-1d8f8613'
+            widget: string
+          - hint: >-
+              Original text: At Quidzu, we are dedicated to helping individuals
+              navigate their financial needs with ease and confidence., key:
+              -4cfab776
+            label: Text
+            name: '-4cfab776'
+            widget: text
+          - hint: >-
+              Original text: Our platform connects you with a wide range of
+              lending partners, offering solutions that fit your unique
+              financial situation., key: -639aaff0
+            label: Text
+            name: '-639aaff0'
+            widget: text
+          - hint: 'Original text: Our Mission, key: 3dba0078'
+            label: Text
+            name: 3dba0078
+            widget: string
+          - hint: >-
+              Original text: Our mission is to provide a seamless and
+              transparent experience for those seeking financial assistance. We
+              strive to make the process of finding and applying for loans as
+              simple and stress-free as possible, ensuring that you have access
+              to the funds you need when you need them., key: 72166cbb
+            label: Text
+            name: 72166cbb
+            widget: text
+          - hint: 'Original text: What We Do, key: -2f05211f'
+            label: Text
+            name: '-2f05211f'
+            widget: string
+          - hint: >-
+              Original text: Quidzu acts as a bridge between borrowers and
+              lenders. We offer a comprehensive directory of loan options,
+              including payday loans, installment loans, and personal loans. Our
+              user-friendly platform allows you to quickly and easily check your
+              eligibility, compare offers, and make informed decisions about
+              your financial future., key: -793c9963
+            label: Text
+            name: '-793c9963'
+            widget: text
+          - hint: 'Original text: Why Choose Quidzu?, key: 1605b834'
+            label: Text
+            name: 1605b834
+            widget: string
+          - hint: 'Original text: No Fees for Requests:, key: -41e6235'
+            label: Text
+            name: '-41e6235'
+            widget: string
+          - hint: >-
+              Original text:  We do not charge any fees for making a loan
+              request. Our service is completely free to use, and you can rest
+              assured that there are no hidden costs or obligations., key:
+              -3bddaf83
+            label: Text
+            name: '-3bddaf83'
+            widget: text
+          - hint: 'Original text: Quick Access to Funds:, key: -37b86898'
+            label: Text
+            name: '-37b86898'
+            widget: string
+          - hint: >-
+              Original text:  Our streamlined process ensures that you can
+              receive funds quickly. In many cases, money can be sent to your
+              bank account within 24 hours, or sometimes even within a few
+              hours., key: 745f5c1c
+            label: Text
+            name: 745f5c1c
+            widget: text
+          - hint: 'Original text: Transparency and Trust:, key: -31b2aed'
+            label: Text
+            name: '-31b2aed'
+            widget: string
+          - hint: >-
+              Original text:  We prioritize your trust and work with reputable
+              lending partners. We provide clear information and guidance to
+              help you make the best choice for your financial needs., key:
+              bad478a
+            label: Text
+            name: bad478a
+            widget: text
+          - hint: 'Original text: Support and Guidance:, key: -575235f8'
+            label: Text
+            name: '-575235f8'
+            widget: string
+          - hint: >-
+              Original text:  If you ever have trouble repaying, our partners
+              are ready to work with you to find a solution. We encourage
+              proactive communication to minimize any potential impact on your
+              credit score., key: b50b755
+            label: Text
+            name: b50b755
+            widget: text
+          - hint: 'Original text: Our Commitment, key: 7293d4a9'
+            label: Text
+            name: 7293d4a9
+            widget: string
+          - hint: >-
+              Original text: At Quidzu, we are committed to maintaining the
+              highest standards of integrity and customer service. We understand
+              the importance of financial stability and are here to support you
+              every step of the way. Whether you need short-term financial
+              assistance or are looking for longer-term solutions, Quidzu is
+              here to help., key: 45688d3f
+            label: Text
+            name: 45688d3f
+            widget: text
+          - hint: 'Original text: Get in Touch, key: -53f399f2'
+            label: Text
+            name: '-53f399f2'
+            widget: string
+          - hint: >-
+              Original text: If you have any questions or need assistance, our
+              customer support team is always ready to help. Feel free to reach
+              out to us via email at , key: -47538cc8
+            label: Text
+            name: '-47538cc8'
+            widget: text
+          - hint: 'Original text: support@quidzu.com, key: -4623dba2'
+            label: Text
+            name: '-4623dba2'
+            widget: string
+          - hint: 'Original text:  or call us at 1-800-532-3457., key: -35197b0f'
+            label: Text
+            name: '-35197b0f'
+            widget: string
+          - hint: >-
+              Original text: Thank you for choosing Quidzu. We look forward to
+              helping you achieve your financial goals., key: 34891332
+            label: Text
+            name: '34891332'
+            widget: text
+          - hint: 'Original text: ‍, key: 200d'
+            label: Text
+            name: 200d
+            widget: string
+          - hint: 'Original text: Get Started, key: -364d0a89'
+            label: Text
+            name: '-364d0a89'
+            widget: string
+          - hint: >-
+              Original text: Use our simple online form to apply for a quick
+              loan today., key: -650857f3
+            label: Text
+            name: '-650857f3'
+            widget: string
+          - hint: 'Original text: We’re hiring!, key: -4cae6832'
+            label: Text
+            name: '-4cae6832'
+            widget: string
+          - hint: 'Original text: We’re looking for talented people, key: -66bbc912'
+            label: Text
+            name: '-66bbc912'
+            widget: string
+          - hint: >-
+              Original text: Our philosophy is simple — hire a team of diverse,
+              passionate people and foster a culture that empowers you to do
+              your best work., key: -7c276967
+            label: Text
+            name: '-7c276967'
+            widget: text
+          - hint: 'Original text: Design, key: 79ceadde'
+            label: Text
+            name: 79ceadde
+            widget: string
+          - hint: 'Original text: Product Designer, key: 2ef52f3c'
+            label: Text
+            name: 2ef52f3c
+            widget: string
+          - hint: 'Original text: Remote, key: -6e501b9a'
+            label: Text
+            name: '-6e501b9a'
+            widget: string
+          - hint: 'Original text: Email Us, key: 3137a5e2'
+            label: Text
+            name: 3137a5e2
+            widget: string
+          - hint: >-
+              Original text: We’re looking for someone motivated and experienced
+              to join our design team. If that's you let's talk., key: 103353b4
+            label: Text
+            name: 103353b4
+            widget: text
+          - hint: 'Original text: UX Designer, key: 3296d7e8'
+            label: Text
+            name: 3296d7e8
+            widget: string
+          - hint: "Original text: UX\_Designer with a passion for design - get in touch., key: 36f548ec"
+            label: Text
+            name: 36f548ec
+            widget: string
+          - hint: 'Original text: Software Development, key: 7104442'
+            label: Text
+            name: '7104442'
+            widget: string
+          - hint: 'Original text: Engineering Manager, key: 60691760'
+            label: Text
+            name: '60691760'
+            widget: string
+          - hint: >-
+              Original text: Have you led large engineering teams in the past -
+              let's talk., key: 26133188
+            label: Text
+            name: '26133188'
+            widget: string
+          - hint: 'Original text: Frontend Developer, key: -44378c4'
+            label: Text
+            name: '-44378c4'
+            widget: string
+          - hint: >-
+              Original text: Frontend Developer with a passion for finance. You
+              might be the right person for the role., key: 51ee8036
+            label: Text
+            name: 51ee8036
+            widget: string
+          - hint: 'Original text: Customer Success, key: -489d863f'
+            label: Text
+            name: '-489d863f'
+            widget: string
+          - hint: 'Original text: Customer Success Manager, key: -196793d2'
+            label: Text
+            name: '-196793d2'
+            widget: string
+          - hint: "Original text: Do you put success at the heart of everything you do?\_Let's talk., key: -1ac2fada"
+            label: Text
+            name: '-1ac2fada'
+            widget: string
+          - hint: 'Original text: Support, key: -b54e851'
+            label: Text
+            name: '-b54e851'
+            widget: string
+          - hint: >-
+              Original text: Everything you need to know about Quidzu. Can’t
+              find the answer you’re looking for? Please chat to our team., key:
+              581ceed0
+            label: Text
+            name: 581ceed0
+            widget: text
+          - hint: 'Original text: Get in touch, key: -5230a9d2'
+            label: Text
+            name: '-5230a9d2'
+            widget: string
+          - hint: 'Original text: Do you charge any fees, key: -515885a9'
+            label: Text
+            name: '-515885a9'
+            widget: string
+          - hint: >-
+              Original text: No, we do not charge fees for making a loan request
+              with Quidzu. We work on a commission basis with our lending
+              partners and may receive a commission if your submission is
+              successful. But you can rest assured that if you submit an
+              inquiry, you will not be charged anything by Quidzu., key:
+              -76a97019
+            label: Text
+            name: '-76a97019'
+            widget: text
+          - hint: >-
+              Original text: We don't make any money from referring you to a
+              local lender., key: 43c8c2dc
+            label: Text
+            name: 43c8c2dc
+            widget: string
+          - hint: 'Original text: Will this impact my credit score?, key: 7a93cd06'
+            label: Text
+            name: 7a93cd06
+            widget: string
+          - hint: >-
+              Original text: No, making a loan submission will not negatively
+              impact your credit score. Credit checks will be carried out as
+              part of the approval process, but your credit score will not be
+              negatively affected by the submission itself. Your credit score
+              may only worsen if you are accepted for a loan and then struggle
+              to make repayments on time, putting your account into arrears.
+              Conversely, if you make repayments on time, your credit score
+              could improve. However, payday loans should not be viewed as a
+              method to boost your credit score., key: 6032e682
+            label: Text
+            name: '6032e682'
+            widget: text
+          - hint: "Original text: What happens if I\_make a late repayment?, key: -7cddd8fc"
+            label: Text
+            name: '-7cddd8fc'
+            widget: string
+          - hint: >-
+              Original text: If you miss your scheduled repayment or are late,
+              you may be charged a late fee, and this could negatively impact
+              your credit score., key: -518e41f0
+            label: Text
+            name: '-518e41f0'
+            widget: text
+          - hint: >-
+              Original text: If you think you will have trouble repaying this
+              month or next, it is important to speak to your lender as soon as
+              possible. They can usually help you and reduce any late fees or
+              damage to your credit rating., key: 703004da
+            label: Text
+            name: 703004da
+            widget: text
+          - hint: >-
+              Original text: How long will it take to get my money?, key:
+              7be2f862
+            label: Text
+            name: 7be2f862
+            widget: string
+          - hint: >-
+              Original text: If you use one of the lenders we suggest in our
+              directory then you'll need to check in with them. If however you
+              use our online service money can be sent to your bank account
+              within 24 hours (or sometimes just a few hours). As a standard, we
+              say that you should be able to receive funds by the next business
+              day., key: 5045a36c
+            label: Text
+            name: 5045a36c
+            widget: text
+          - hint: 'Original text: How do repayments work?, key: -ef3f36d'
+            label: Text
+            name: '-ef3f36d'
+            widget: string
+          - hint: >-
+              Original text: Repayments are collected automatically from your
+              bank account, on a scheduled date that you have agreed with the
+              lender. You will be sent reminders on the days leading up to
+              repayment so that there are no surprises. Repayments are made each
+              month over a period of 1 to 60 months, depending on the size of
+              your loan., key: 35900324
+            label: Text
+            name: '35900324'
+            widget: text
+          - hint: 'Original text: Accessibility, key: 22eaf12e'
+            label: Text
+            name: 22eaf12e
+            widget: string
+          - hint: >-
+              Original text: At Quidzu, we are committed to ensuring digital
+              accessibility for all users, key: c7ad0f1
+            label: Text
+            name: c7ad0f1
+            widget: string
+          - hint: >-
+              Original text: At Quidzu, we are committed to ensuring digital
+              accessibility for all users, including those with disabilities. We
+              strive to continually improve the user experience for everyone and
+              apply the relevant accessibility standards to achieve these
+              goals., key: -3ed64645
+            label: Text
+            name: '-3ed64645'
+            widget: text
+          - hint: 'Original text: Measures to support accessibility, key: -1b0a5a5d'
+            label: Text
+            name: '-1b0a5a5d'
+            widget: string
+          - hint: >-
+              Original text: Quidzu takes the following measures to ensure
+              accessibility of our website:, key: 48a9611a
+            label: Text
+            name: 48a9611a
+            widget: string
+          - hint: 'Original text: Accessibility Training:, key: 4a5b260e'
+            label: Text
+            name: 4a5b260e
+            widget: string
+          - hint: >-
+              Original text:  We provide ongoing training for our staff on
+              accessibility best practices., key: -4a8e06e6
+            label: Text
+            name: '-4a8e06e6'
+            widget: string
+          - hint: 'Original text: Incorporating Feedback:, key: 53bd5a52'
+            label: Text
+            name: 53bd5a52
+            widget: string
+          - hint: >-
+              Original text:  We welcome feedback from users on accessibility
+              issues and are committed to addressing any barriers reported.,
+              key: 27e934a7
+            label: Text
+            name: 27e934a7
+            widget: text
+          - hint: 'Original text: Accessibility Tools and Standards:, key: 3198b864'
+            label: Text
+            name: 3198b864
+            widget: string
+          - hint: >-
+              Original text:  We use various tools and follow the Web Content
+              Accessibility Guidelines (WCAG) 2.1 to identify and address
+              accessibility issues., key: -7d568316
+            label: Text
+            name: '-7d568316'
+            widget: text
+          - hint: 'Original text: Conformance Status, key: 7793f31d'
+            label: Text
+            name: 7793f31d
+            widget: string
+          - hint: >-
+              Original text: The Web Content Accessibility Guidelines (WCAG)
+              defines requirements for designers and developers to improve
+              accessibility for people with disabilities. Quidzu aims to comply
+              with WCAG 2.1 Level AA standards., key: 501cae26
+            label: Text
+            name: 501cae26
+            widget: text
+          - hint: 'Original text: Accessibility Features, key: 81bab0f'
+            label: Text
+            name: 81bab0f
+            widget: string
+          - hint: 'Original text: Keyboard Navigation:, key: 304b91ed'
+            label: Text
+            name: 304b91ed
+            widget: string
+          - hint: >-
+              Original text:  Our website is fully navigable by keyboard., key:
+              48dc81f6
+            label: Text
+            name: 48dc81f6
+            widget: string
+          - hint: 'Original text: Text Alternatives:, key: 29a150e1'
+            label: Text
+            name: 29a150e1
+            widget: string
+          - hint: >-
+              Original text:  We provide text alternatives for non-text
+              content., key: 211607d9
+            label: Text
+            name: 211607d9
+            widget: string
+          - hint: 'Original text: Resizable Text:, key: 65c3b2b8'
+            label: Text
+            name: 65c3b2b8
+            widget: string
+          - hint: >-
+              Original text:  Users can resize text up to 200% without loss of
+              content or functionality., key: 104ea057
+            label: Text
+            name: 104ea057
+            widget: string
+          - hint: 'Original text: Contrast Ratio:, key: 2516a46d'
+            label: Text
+            name: 2516a46d
+            widget: string
+          - hint: >-
+              Original text:  We ensure sufficient contrast between text and
+              background., key: 5c428788
+            label: Text
+            name: 5c428788
+            widget: string
+          - hint: 'Original text: Responsive Design:, key: 355c97d0'
+            label: Text
+            name: 355c97d0
+            widget: string
+          - hint: >-
+              Original text:  Our website is designed to be accessible on
+              various devices, including mobile phones and tablets., key:
+              -593df837
+            label: Text
+            name: '-593df837'
+            widget: text
+          - hint: 'Original text: Compatibility, key: -58930ab0'
+            label: Text
+            name: '-58930ab0'
+            widget: string
+          - hint: >-
+              Original text: Quidzu is designed to be compatible with the
+              following assistive technologies:, key: -40a30138
+            label: Text
+            name: '-40a30138'
+            widget: string
+          - hint: 'Original text: Screen Readers:, key: -3724c8a2'
+            label: Text
+            name: '-3724c8a2'
+            widget: string
+          - hint: >-
+              Original text:  We ensure our site is compatible with popular
+              screen readers like JAWS, NVDA, and VoiceOver., key: -712eee14
+            label: Text
+            name: '-712eee14'
+            widget: text
+          - hint: 'Original text: Browsers and Devices:, key: -6871ed25'
+            label: Text
+            name: '-6871ed25'
+            widget: string
+          - hint: >-
+              Original text:  Our site is tested across various web browsers and
+              devices to ensure compatibility and accessibility., key: -4925e8ed
+            label: Text
+            name: '-4925e8ed'
+            widget: text
+          - hint: 'Original text: Feedback, key: -78fb05b'
+            label: Text
+            name: '-78fb05b'
+            widget: string
+          - hint: >-
+              Original text: We welcome your feedback on the accessibility of
+              Quidzu. If you encounter any accessibility barriers, please
+              contact us:, key: 79dbda5c
+            label: Text
+            name: 79dbda5c
+            widget: text
+          - hint: 'Original text: Email:, key: 7bec143e'
+            label: Text
+            name: 7bec143e
+            widget: string
+          - hint: 'Original text: accessibility@quidzu.com, key: -2d7eb281'
+            label: Text
+            name: '-2d7eb281'
+            widget: string
+          - hint: 'Original text: Phone:, key: -718ea354'
+            label: Text
+            name: '-718ea354'
+            widget: string
+          - hint: 'Original text:  1-800-532-3457, key: 3ed3efcd'
+            label: Text
+            name: 3ed3efcd
+            widget: string
+          - hint: 'Original text: Mail:, key: 46ac143'
+            label: Text
+            name: 46ac143
+            widget: string
+          - hint: >-
+              Original text:  Quidzu Privacy Team, Northgate Blvd, Sacramento,
+              CA 95834, key: -73b31f99
+            label: Text
+            name: '-73b31f99'
+            widget: string
+          - hint: >-
+              Original text: We aim to respond to accessibility feedback within
+              3 business days., key: 7e8dd9f2
+            label: Text
+            name: 7e8dd9f2
+            widget: string
+          - hint: 'Original text: Ongoing Efforts, key: -48473ade'
+            label: Text
+            name: '-48473ade'
+            widget: string
+          - hint: >-
+              Original text: Quidzu is committed to continually improving
+              accessibility. As part of our efforts, we conduct regular
+              accessibility audits and updates to ensure ongoing compliance and
+              improvement., key: -2259e076
+            label: Text
+            name: '-2259e076'
+            widget: text
+          - hint: 'Original text: Limitations and Alternatives, key: 5d5ccff6'
+            label: Text
+            name: 5d5ccff6
+            widget: string
+          - hint: >-
+              Original text: Despite our best efforts to ensure accessibility,
+              there may be some limitations. Please contact us if you observe an
+              issue or need assistance with any part of our website., key:
+              52af88d1
+            label: Text
+            name: 52af88d1
+            widget: text
+          - hint: 'Original text: Date, key: 2063ce'
+            label: Text
+            name: 2063ce
+            widget: string
+          - hint: >-
+              Original text: This accessibility statement was last updated on
+              June 14th 2024., key: -4a823deb
+            label: Text
+            name: '-4a823deb'
+            widget: string
+          - hint: >-
+              Original text: California Consumer Privacy Act (CCPA) Policy for
+              Quidzu, key: -61cfa89
+            label: Text
+            name: '-61cfa89'
+            widget: string
+          - hint: >-
+              Original text: Quidzu values your privacy and is committed to
+              protecting your personal information., key: 38d9ace1
+            label: Text
+            name: 38d9ace1
+            widget: string
+          - hint: >-
+              Original text: This California Consumer Privacy Act (CCPA) Policy
+              outlines the rights of California residents regarding their
+              personal information and our practices regarding the collection,
+              use, and sharing of such information., key: -507ce2cb
+            label: Text
+            name: '-507ce2cb'
+            widget: text
+          - hint: 'Original text: Your Rights under the CCPA, key: -3b87f1dc'
+            label: Text
+            name: '-3b87f1dc'
+            widget: string
+          - hint: >-
+              Original text: As a California resident, you have the following
+              rights under the CCPA:, key: 2697f2df
+            label: Text
+            name: 2697f2df
+            widget: string
+          - hint: 'Original text: Right to Know:, key: 38cb36ae'
+            label: Text
+            name: 38cb36ae
+            widget: string
+          - hint: >-
+              Original text:  You have the right to request that we disclose
+              what personal information we collect, use, disclose, and sell.,
+              key: -1df61351
+            label: Text
+            name: '-1df61351'
+            widget: text
+          - hint: 'Original text: Right to Delete:, key: -4f008832'
+            label: Text
+            name: '-4f008832'
+            widget: string
+          - hint: >-
+              Original text:  You have the right to request the deletion of your
+              personal information that we have collected, subject to certain
+              exceptions., key: 6f733092
+            label: Text
+            name: 6f733092
+            widget: text
+          - hint: 'Original text: Right to Opt-Out:, key: 36020da7'
+            label: Text
+            name: 36020da7
+            widget: string
+          - hint: >-
+              Original text:  You have the right to opt-out of the sale of your
+              personal information., key: -4eece34a
+            label: Text
+            name: '-4eece34a'
+            widget: string
+          - hint: 'Original text: Right to Non-Discrimination:, key: 6669f1ea'
+            label: Text
+            name: 6669f1ea
+            widget: string
+          - hint: >-
+              Original text:  You have the right to not be discriminated against
+              for exercising any of your CCPA rights., key: 4ecf3858
+            label: Text
+            name: 4ecf3858
+            widget: text
+          - hint: 'Original text: Information We Collect, key: 63d0ad6c'
+            label: Text
+            name: 63d0ad6c
+            widget: string
+          - hint: >-
+              Original text: We may collect the following categories of personal
+              information:, key: -52ad0b38
+            label: Text
+            name: '-52ad0b38'
+            widget: string
+          - hint: 'Original text: Identifiers:, key: -16247750'
+            label: Text
+            name: '-16247750'
+            widget: string
+          - hint: >-
+              Original text:  Name, email address, postal address, phone number,
+              and IP address., key: 31d0423
+            label: Text
+            name: 31d0423
+            widget: string
+          - hint: 'Original text: Commercial Information:, key: -7af3665c'
+            label: Text
+            name: '-7af3665c'
+            widget: string
+          - hint: >-
+              Original text:  Records of products or services purchased,
+              obtained, or considered., key: 49d270b2
+            label: Text
+            name: 49d270b2
+            widget: string
+          - hint: 'Original text: Internet Activity:, key: -1252714'
+            label: Text
+            name: '-1252714'
+            widget: string
+          - hint: >-
+              Original text:  Browsing history, search history, and information
+              on your interaction with our website., key: 6c950e2b
+            label: Text
+            name: 6c950e2b
+            widget: string
+          - hint: 'Original text: Geolocation Data:, key: -1208650a'
+            label: Text
+            name: '-1208650a'
+            widget: string
+          - hint: 'Original text:  Physical location or movements., key: 37c85965'
+            label: Text
+            name: 37c85965
+            widget: string
+          - hint: >-
+              Original text: Professional or Employment Information:, key:
+              4ccf6a7e
+            label: Text
+            name: 4ccf6a7e
+            widget: string
+          - hint: 'Original text:  Job title, company name., key: -672e0fe9'
+            label: Text
+            name: '-672e0fe9'
+            widget: string
+          - hint: 'Original text: Inferences:, key: -43030020'
+            label: Text
+            name: '-43030020'
+            widget: string
+          - hint: >-
+              Original text:  Preferences, characteristics, psychological
+              trends, predispositions, behavior, attitudes, intelligence,
+              abilities, and aptitudes., key: -5bc646e6
+            label: Text
+            name: '-5bc646e6'
+            widget: text
+          - hint: 'Original text: How We Use Your Information, key: 4bfde45a'
+            label: Text
+            name: 4bfde45a
+            widget: string
+          - hint: >-
+              Original text: We use the personal information we collect for the
+              following purposes:, key: 49a89f82
+            label: Text
+            name: 49a89f82
+            widget: string
+          - hint: >-
+              Original text: To provide, support, and improve our services.,
+              key: 782fc7f8
+            label: Text
+            name: 782fc7f8
+            widget: string
+          - hint: >-
+              Original text: To communicate with you about your account or
+              transactions., key: -5f9c0a20
+            label: Text
+            name: '-5f9c0a20'
+            widget: string
+          - hint: >-
+              Original text: To process your transactions and orders., key:
+              18eb5dec
+            label: Text
+            name: 18eb5dec
+            widget: string
+          - hint: >-
+              Original text: To send you marketing and promotional
+              communications., key: -49b9c18
+            label: Text
+            name: '-49b9c18'
+            widget: string
+          - hint: >-
+              Original text: To improve our website and user experience., key:
+              -36155f62
+            label: Text
+            name: '-36155f62'
+            widget: string
+          - hint: >-
+              Original text: To comply with legal obligations and resolve
+              disputes., key: 56804a35
+            label: Text
+            name: 56804a35
+            widget: string
+          - hint: 'Original text: How We Share Your Information, key: -1dd2ab7e'
+            label: Text
+            name: '-1dd2ab7e'
+            widget: string
+          - hint: >-
+              Original text: We may share your personal information with the
+              following categories of third parties:, key: -354fe9e9
+            label: Text
+            name: '-354fe9e9'
+            widget: string
+          - hint: 'Original text: Service Providers:, key: 75c4b263'
+            label: Text
+            name: 75c4b263
+            widget: string
+          - hint: >-
+              Original text:  Companies that provide services to us, such as
+              payment processors, marketing partners, and website analytics
+              providers., key: 658e8d59
+            label: Text
+            name: 658e8d59
+            widget: text
+          - hint: 'Original text: Business Transfers:, key: -635fa44e'
+            label: Text
+            name: '-635fa44e'
+            widget: string
+          - hint: >-
+              Original text:  In connection with any merger, sale of company
+              assets, or acquisition., key: -3a25ee1
+            label: Text
+            name: '-3a25ee1'
+            widget: string
+          - hint: 'Original text: Legal Requirements:, key: 2b8cbc43'
+            label: Text
+            name: 2b8cbc43
+            widget: string
+          - hint: >-
+              Original text:  When required by law, such as to comply with a
+              subpoena or similar legal process., key: -47f28412
+            label: Text
+            name: '-47f28412'
+            widget: string
+          - hint: 'Original text: How to Exercise Your Rights, key: 347410d1'
+            label: Text
+            name: 347410d1
+            widget: string
+          - hint: >-
+              Original text: To exercise your rights under the CCPA, please
+              contact us by one of the following methods:, key: 6617d013
+            label: Text
+            name: 6617d013
+            widget: string
+          - hint: 'Original text: ccpa@quidzu.com, key: 4920dc9c'
+            label: Text
+            name: 4920dc9c
+            widget: string
+          - hint: >-
+              Original text: When submitting a request, please include your
+              name, contact information, and a detailed description of your
+              request. We may need to verify your identity before processing
+              your request., key: c7cd269
+            label: Text
+            name: c7cd269
+            widget: text
+          - hint: 'Original text: Response Time, key: -6ff5acb4'
+            label: Text
+            name: '-6ff5acb4'
+            widget: string
+          - hint: >-
+              Original text: We aim to respond to verifiable consumer requests
+              within 45 days. If we require more time, we will inform you of the
+              reason and extension period in writing., key: -34a214ca
+            label: Text
+            name: '-34a214ca'
+            widget: text
+          - hint: 'Original text: Changes to This Policy, key: 688d71ec'
+            label: Text
+            name: 688d71ec
+            widget: string
+          - hint: >-
+              Original text: We may update this CCPA Policy from time to time.
+              We will notify you of any changes by posting the new policy on our
+              website. Your continued use of our website following the posting
+              of changes constitutes your acceptance of such changes., key:
+              -33f28471
+            label: Text
+            name: '-33f28471'
+            widget: text
+          - hint: >-
+              Original text: If you have any questions or concerns about this
+              CCPA Policy or our privacy practices, please contact us:, key:
+              -1be8ef14
+            label: Text
+            name: '-1be8ef14'
+            widget: text
+          - hint: 'Original text: privacy@quidzu.com, key: 3cfa2305'
+            label: Text
+            name: 3cfa2305
+            widget: string
+          - hint: >-
+              Original text: At Quidzu, we respect your privacy and are
+              committed to providing you with control over your personal
+              information., key: 500ecadf
+            label: Text
+            name: 500ecadf
+            widget: text
+          - hint: >-
+              Original text: Under the California Consumer Privacy Act (CCPA),
+              California residents have the right to opt-out of the sale of
+              their personal information. This page provides you with
+              information on how you can exercise this right., key: -56e57924
+            label: Text
+            name: '-56e57924'
+            widget: text
+          - hint: 'Original text: What Does "Sell" Mean?, key: -5e84ddad'
+            label: Text
+            name: '-5e84ddad'
+            widget: string
+          - hint: >-
+              Original text: Under the CCPA, "sell" broadly means sharing
+              personal information with third parties in exchange for valuable
+              consideration. This includes sharing information for advertising
+              and marketing purposes., key: -2bb582b5
+            label: Text
+            name: '-2bb582b5'
+            widget: text
+          - hint: >-
+              Original text: How to Opt-Out of the Sale of Your Personal
+              Information, key: -2ed7fdae
+            label: Text
+            name: '-2ed7fdae'
+            widget: string
+          - hint: >-
+              Original text: If you are a California resident and wish to
+              opt-out of the sale of your personal information, you can do so by
+              following the instructions below:, key: -67b3ca26
+            label: Text
+            name: '-67b3ca26'
+            widget: text
+          - hint: 'Original text:  Send an email to , key: 4b3507a6'
+            label: Text
+            name: 4b3507a6
+            widget: string
+          - hint: 'Original text: optout@quidzu.com, key: -44b0e70e'
+            label: Text
+            name: '-44b0e70e'
+            widget: string
+          - hint: >-
+              Original text:  with the subject line "Do Not Sell My Personal
+              Information" and include your name and email address in the body
+              of the email., key: -42698d2b
+            label: Text
+            name: '-42698d2b'
+            widget: text
+          - hint: >-
+              Original text:  Call us at 1-800-532-3457 and provide your name
+              and email address., key: 2534179d
+            label: Text
+            name: 2534179d
+            widget: string
+          - hint: >-
+              Original text:  Send a written request to: Quidzu Privacy Team,
+              Northgate Blvd, Sacramento, CA 95834, key: -7937ef2b
+            label: Text
+            name: '-7937ef2b'
+            widget: string
+          - hint: >-
+              Original text: Please include your name, email address, and a
+              statement that you wish to opt-out of the sale of your personal
+              information., key: 6dda7c0a
+            label: Text
+            name: 6dda7c0a
+            widget: text
+          - hint: 'Original text: Verification Process, key: -7cc7ee96'
+            label: Text
+            name: '-7cc7ee96'
+            widget: string
+          - hint: >-
+              Original text: To protect your privacy and ensure that we comply
+              with your request, we may need to verify your identity before
+              processing your opt-out request. We may contact you for additional
+              information necessary to verify your identity., key: -e09edab
+            label: Text
+            name: '-e09edab'
+            widget: text
+          - hint: 'Original text: Impact of Opting Out, key: 3c1f68ac'
+            label: Text
+            name: 3c1f68ac
+            widget: string
+          - hint: >-
+              Original text: Once you opt-out, we will no longer sell your
+              personal information. This may affect the personalization of
+              content and advertising that you receive from us. However, you
+              will still be able to access our services and content., key:
+              bd701d7
+            label: Text
+            name: bd701d7
+            widget: text
+          - hint: 'Original text: Update Your Preferences, key: -5c2da31e'
+            label: Text
+            name: '-5c2da31e'
+            widget: string
+          - hint: >-
+              Original text: If you have previously opted out and wish to change
+              your preferences, you can contact us using any of the methods
+              listed above., key: 6ca6c61d
+            label: Text
+            name: 6ca6c61d
+            widget: text
+          - hint: >-
+              Original text: If you have any questions or concerns about this
+              "Do Not Sell My Personal Information" page or our privacy
+              practices, please contact us:, key: 37fade6
+            label: Text
+            name: 37fade6
+            widget: text
+          - hint: >-
+              Original text: We are committed to responding to your inquiries
+              promptly and ensuring that your privacy rights are respected.,
+              key: -7f5ecd2e
+            label: Text
+            name: '-7f5ecd2e'
+            widget: text
+          - hint: 'Original text: Changes to This Page, key: -4b8bea37'
+            label: Text
+            name: '-4b8bea37'
+            widget: string
+          - hint: >-
+              Original text: We may update this "Do Not Sell My Personal
+              Information" page from time to time to reflect changes in our
+              practices or for other operational, legal, or regulatory reasons.
+              We encourage you to review this page periodically for the latest
+              information on our privacy practices., key: 4c5562
+            label: Text
+            name: 4c5562
+            widget: text
+          - hint: 'Original text: Privacy Policy, key: -3fbde6f6'
+            label: Text
+            name: '-3fbde6f6'
+            widget: string
+          - hint: >-
+              Original text: Welcome to Quidzu. Your privacy is important to us.
+              This Privacy Policy explains how we collect, use, disclose, and
+              protect your personal information when you visit our website or
+              use our services., key: 611a5b7a
+            label: Text
+            name: 611a5b7a
+            widget: text
+          - hint: >-
+              Original text: We collect various types of information in
+              connection with the services we provide, including:, key: 62c84351
+            label: Text
+            name: 62c84351
+            widget: text
+          - hint: 'Original text: Personal Identifiers:, key: 2c53aa70'
+            label: Text
+            name: 2c53aa70
+            widget: string
+          - hint: >-
+              Original text: We use the personal information we collect for
+              various purposes, including:, key: -51779348
+            label: Text
+            name: '-51779348'
+            widget: string
+          - hint: 'Original text: Your Rights and Choices, key: 586831cd'
+            label: Text
+            name: 586831cd
+            widget: string
+          - hint: >-
+              Original text: You have certain rights regarding your personal
+              information, including:, key: -14886f8f
+            label: Text
+            name: '-14886f8f'
+            widget: string
+          - hint: 'Original text: Access and Data Portability:, key: 3e500e2'
+            label: Text
+            name: 3e500e2
+            widget: string
+          - hint: >-
+              Original text:  The right to access the personal information we
+              hold about you and request a copy., key: 5937e0c2
+            label: Text
+            name: 5937e0c2
+            widget: string
+          - hint: 'Original text: Correction:, key: -45348b84'
+            label: Text
+            name: '-45348b84'
+            widget: string
+          - hint: >-
+              Original text:  The right to request the correction of inaccurate
+              or incomplete personal information., key: -38778211
+            label: Text
+            name: '-38778211'
+            widget: string
+          - hint: 'Original text: Deletion:, key: 6212b60c'
+            label: Text
+            name: 6212b60c
+            widget: string
+          - hint: >-
+              Original text:  The right to request the deletion of your personal
+              information, subject to certain exceptions., key: -1f8e1041
+            label: Text
+            name: '-1f8e1041'
+            widget: text
+          - hint: 'Original text: Opt-Out of Sale:, key: 316eced6'
+            label: Text
+            name: 316eced6
+            widget: string
+          - hint: >-
+              Original text:  The right to opt-out of the sale of your personal
+              information., key: 2f4882ff
+            label: Text
+            name: 2f4882ff
+            widget: string
+          - hint: 'Original text: Non-Discrimination:, key: 7918486b'
+            label: Text
+            name: 7918486b
+            widget: string
+          - hint: >-
+              Original text:  The right to not be discriminated against for
+              exercising any of your privacy rights., key: -21c8c5c8
+            label: Text
+            name: '-21c8c5c8'
+            widget: string
+          - hint: >-
+              Original text: To exercise your rights, please contact us using
+              the contact details provided below., key: -5d804f90
+            label: Text
+            name: '-5d804f90'
+            widget: string
+          - hint: 'Original text: Security of Your Information, key: -743784d8'
+            label: Text
+            name: '-743784d8'
+            widget: string
+          - hint: >-
+              Original text: We implement appropriate technical and
+              organizational measures to protect the personal information we
+              collect and process. However, no security measure is completely
+              foolproof, and we cannot guarantee absolute security., key:
+              14146b14
+            label: Text
+            name: 14146b14
+            widget: text
+          - hint: 'Original text: Retention of Your Information, key: 4506a3c6'
+            label: Text
+            name: 4506a3c6
+            widget: string
+          - hint: >-
+              Original text: We retain your personal information for as long as
+              necessary to fulfill the purposes for which it was collected,
+              comply with legal obligations, resolve disputes, and enforce our
+              agreements., key: 5c2d626b
+            label: Text
+            name: 5c2d626b
+            widget: text
+          - hint: 'Original text: Children''s Privacy, key: 377957d3'
+            label: Text
+            name: 377957d3
+            widget: string
+          - hint: >-
+              Original text: Our website and services are not intended for
+              children under the age of 13, and we do not knowingly collect
+              personal information from children under 13. If we become aware
+              that we have collected personal information from a child under 13,
+              we will take steps to delete such information., key: 279f0499
+            label: Text
+            name: 279f0499
+            widget: text
+          - hint: 'Original text: Changes to This Privacy Policy, key: 5247bfa4'
+            label: Text
+            name: 5247bfa4
+            widget: string
+          - hint: >-
+              Original text: We may update this Privacy Policy from time to time
+              to reflect changes in our practices or for other operational,
+              legal, or regulatory reasons. We encourage you to review this
+              Privacy Policy periodically for the latest information on our
+              privacy practices., key: 4cad06b2
+            label: Text
+            name: 4cad06b2
+            widget: text
+          - hint: >-
+              Original text: If you have any questions or concerns about this
+              Privacy Policy or our privacy practices, please contact us:, key:
+              -608b1ac5
+            label: Text
+            name: '-608b1ac5'
+            widget: text
+          - hint: 'Original text: Terms and Conditions, key: -7ac7b766'
+            label: Text
+            name: '-7ac7b766'
+            widget: string
+          - hint: >-
+              Original text: Welcome to Quidzu.com (hereinafter “Company”).
+              These are the Terms and Conditions applicable when using the
+              Company’s website (hereinafter “Service”). These Terms and
+              Conditions are applicable to Service users (hereinafter “You” /
+              “Your”)., key: -5aa32651
+            label: Text
+            name: '-5aa32651'
+            widget: text
+          - hint: >-
+              Original text: It is important for Service users to carefully read
+              these Terms and Conditions before accessing the Company’s website.
+              By using our website, You are acknowledging that you have both
+              read and agree to these Terms and Conditions, and are legally
+              bound by all such Terms and Conditions contained throughout this
+              page., key: b3cb9ff
+            label: Text
+            name: b3cb9ff
+            widget: text
+          - hint: >-
+              Original text: When visiting Quidzu.com, You accept all of the
+              Company’s policies and practices, described in both these Terms
+              and Conditions and in the Privacy Policy., key: -2dedfc81
+            label: Text
+            name: '-2dedfc81'
+            widget: text
+          - hint: >-
+              Original text: If for any reason You do not agree to the Company’s
+              Privacy Policy or Terms and Conditions, please do not use our
+              Services., key: 6505cc0c
+            label: Text
+            name: 6505cc0c
+            widget: text
+          - hint: 'Original text: Disclaimer, key: -6f68ae45'
+            label: Text
+            name: '-6f68ae45'
+            widget: string
+          - hint: >-
+              Original text: Quidzu, the Company, is a platform provider and not
+              a financial institution, lender, or financial advisor. Therefore,
+              this website should not be considered in any way as an offer to
+              lend or provide financial advice. Everything on the site should
+              instead be considered as general information and commercial
+              advertisement., key: -7d057395
+            label: Text
+            name: '-7d057395'
+            widget: text
+          - hint: >-
+              Original text: The Company’s service is used to connect You with
+              suitable products and services based on the information you
+              provide. The actual terms and conditions of any product or service
+              are determined by the third-party providers and not by Quidzu.,
+              key: 47e9c834
+            label: Text
+            name: 47e9c834
+            widget: text
+          - hint: >-
+              Original text: You understand that by using the Service, the
+              third-party providers may access and use the information you
+              provide in accordance with their own privacy policies and terms of
+              service. Completing any forms or requests on the Company’s site
+              does not guarantee approval or offer of any product or service.,
+              key: -18126dd6
+            label: Text
+            name: '-18126dd6'
+            widget: text
+          - hint: >-
+              Original text: If a third-party provider offers you a product or
+              service, You should contact them individually with any questions
+              about the terms. The Company holds no responsibility for the
+              offers you receive from third-party providers., key: 18533dd1
+            label: Text
+            name: 18533dd1
+            widget: text
+          - hint: 'Original text: Use of Service, key: -62154a5b'
+            label: Text
+            name: '-62154a5b'
+            widget: string
+          - hint: >-
+              Original text: The Company’s Service is free to use. The Company
+              may receive compensation from third-party providers by providing
+              them with services, facilities, or goods. These offerings to
+              third-party providers may be related to your use of the Company’s
+              Service, however, equally may not. Regardless of whether or not
+              this is related to your use of our services, You agree to such
+              compensation arrangements., key: 4edb046b
+            label: Text
+            name: 4edb046b
+            widget: text
+          - hint: 'Original text: Warranty and Liability Limitations, key: -2054fec7'
+            label: Text
+            name: '-2054fec7'
+            widget: string
+          - hint: >-
+              Original text: This Service, alongside the associated products,
+              software, information, and services are provided “as is”., key:
+              6e2c873a
+            label: Text
+            name: 6e2c873a
+            widget: text
+          - hint: >-
+              Original text: The Company disclaims any kind of warranty
+              regarding any matter related to the Service, and any products,
+              software, information, or services provided herein. This includes
+              without limitation the warranties of title, merchantability,
+              non-infringement, or fitness for a particular purpose., key:
+              -2967c554
+            label: Text
+            name: '-2967c554'
+            widget: text
+          - hint: >-
+              Original text: The Company makes no warranty regarding the results
+              you may receive when using this Service, or for the associated
+              products, software, information, and services., key: 15466ab9
+            label: Text
+            name: 15466ab9
+            widget: text
+          - hint: >-
+              Original text: The Company will not be liable for the following:,
+              key: -1211527c
+            label: Text
+            name: '-1211527c'
+            widget: string
+          - hint: >-
+              Original text: Direct, indirect, consequential, incidental,
+              punitive, or special damages/injury that is connected with the use
+              of the Service in any way., key: 663050e0
+            label: Text
+            name: '663050e0'
+            widget: text
+          - hint: >-
+              Original text: The delay or inability to use the Service., key:
+              -50225006
+            label: Text
+            name: '-50225006'
+            widget: string
+          - hint: >-
+              Original text: For any products, software, information, or
+              services You obtain via either this service or arising from the
+              use of this service., key: 54523291
+            label: Text
+            name: '54523291'
+            widget: text
+          - hint: >-
+              Original text: This also applies to participating advertisers or
+              third-party providers, or their directors, officers, subsidiaries,
+              agents, employees, affiliates, assigns, successors, service
+              providers, or content providers., key: -6191f2bb
+            label: Text
+            name: '-6191f2bb'
+            widget: text
+          - hint: >-
+              Original text: This is the case even if the Company, or
+              participating third-party providers, have already been advised
+              that there is a possibility for damages., key: -56df8a6e
+            label: Text
+            name: '-56df8a6e'
+            widget: text
+          - hint: >-
+              Original text: In some states, the disclaimer of implied
+              warranties and limitation of liability is not allowed. Therefore,
+              these limitations and disclaimers might not apply if You are in
+              certain states. In these states, the Company’s respective
+              liability, as well as their participating third-party providers,
+              or their directors, officers, subsidiaries, agents, employees,
+              affiliates, assigns, successors, service providers, or content
+              providers, are limited to the greatest extent that the law
+              permits., key: 4f176482
+            label: Text
+            name: 4f176482
+            widget: text
+          - hint: 'Original text: Security, key: 3c6cdb60'
+            label: Text
+            name: 3c6cdb60
+            widget: string
+          - hint: >-
+              Original text: We endeavor to protect the personal information You
+              provide us with. However, we cannot guarantee its security, or
+              that it will not be decrypted or intercepted by others. The
+              Company is not responsible for decryption or interception of
+              such., key: -106b3293
+            label: Text
+            name: '-106b3293'
+            widget: text
+          - hint: 'Original text: Cookies, key: -64062591'
+            label: Text
+            name: '-64062591'
+            widget: string
+          - hint: >-
+              Original text: The Company makes use of web server logs and
+              “cookies”. Both web server logs and cookies are used to help the
+              Company collect useful information on our Service usage. This can
+              include the following:, key: 418cc981
+            label: Text
+            name: 418cc981
+            widget: text
+          - hint: 'Original text: Time spent on the Company’s Service, key: 209beca1'
+            label: Text
+            name: 209beca1
+            widget: string
+          - hint: 'Original text: The date and time of visits, key: 481e05aa'
+            label: Text
+            name: 481e05aa
+            widget: string
+          - hint: >-
+              Original text: Pages viewed on the Company’s website, key:
+              -4d92453e
+            label: Text
+            name: '-4d92453e'
+            widget: string
+          - hint: >-
+              Original text: The website You visited just before visiting the
+              Company’s, key: -66770e29
+            label: Text
+            name: '-66770e29'
+            widget: string
+          - hint: >-
+              Original text: The website visited just after visiting the
+              Company’s, key: -63fb2353
+            label: Text
+            name: '-63fb2353'
+            widget: string
+          - hint: >-
+              Original text: Cookies will not provide information that could
+              identify You on a personal level. They are a web browser software
+              feature that enables web servers to recognize what computer was
+              used when accessing a website., key: 2b260321
+            label: Text
+            name: 2b260321
+            widget: text
+          - hint: >-
+              Original text: Cookies are essentially a small piece of data,
+              stored on Your hard drive by Your web browser. They should help to
+              make You have a more personalized online experience., key:
+              603be0e8
+            label: Text
+            name: 603be0e8
+            widget: text
+          - hint: 'Original text: Credit Authorization, key: -65da046e'
+            label: Text
+            name: '-65da046e'
+            widget: string
+          - hint: >-
+              Original text: You both acknowledge and authorize the following:,
+              key: -2ea7eb86
+            label: Text
+            name: '-2ea7eb86'
+            widget: string
+          - hint: >-
+              Original text: – The Company will acquire consumer and other
+              related information on You, and that this will be obtained from
+              one or more consumer reporting agencies. This will be done for the
+              purpose of connecting You to third-party providers.– This
+              information might be sent on Your behalf to third-party
+              providers.– This information could be used to validate Your
+              identity, find out the amount of debt You are currently in –
+              helping to determine the debt-income ratio You hold.– Third-party
+              providers may acquire consumer reports and other such related
+              information on You. They may acquire this through one (or more)
+              consumer reporting agencies.– Your information could be used in
+              order for third-party providers to make decisions on credit and
+              prequalification., key: 478eeefe
+            label: Text
+            name: 478eeefe
+            widget: text
+          - hint: 'Original text: Indemnity, key: 46c126a7'
+            label: Text
+            name: 46c126a7
+            widget: string
+          - hint: >-
+              Original text: As a condition of using this Service, You agree to
+              indemnify the Company from and against liabilities, damages,
+              losses, costs, and expenses that arise from, relate to, or result
+              from using or attempting to use this Service. In this, You also
+              agree to indemnify any additional company providing services
+              within the operation of this Service of the same liabilities,
+              damages, losses, costs, and expenses., key: -53b7793b
+            label: Text
+            name: '-53b7793b'
+            widget: text
+          - hint: 'Original text: Disputes and Resolutions, key: 6bce5e8d'
+            label: Text
+            name: 6bce5e8d
+            widget: string
+          - hint: >-
+              Original text: For any disputes regarding these Terms and
+              Conditions, or our services, You agree to submit this before the
+              American Arbitration Association for resolution by arbitration.
+              You will have to file a Demand for Arbitration in the county You
+              live in. The arbitrator has exclusive authority to resolve
+              disputes, this includes claims that these Terms and Conditions are
+              unenforceable, either in whole or in part., key: -a854cbd
+            label: Text
+            name: '-a854cbd'
+            widget: text
+          - hint: 'Original text: Contact Details, key: 3aaae202'
+            label: Text
+            name: 3aaae202
+            widget: string
+          - hint: >-
+              Original text: If you have any questions or concerns regarding
+              these Terms and Conditions, you can get in touch via our contact
+              us page. Alternatively, please use the contact details provided
+              below:, key: 1811bfe9
+            label: Text
+            name: 1811bfe9
+            widget: text
+          - hint: 'Original text: All posts, key: 679ac74'
+            label: Text
+            name: 679ac74
+            widget: string
+          - hint: 'Original text: Jane Quid, key: -5eb5760f'
+            label: Text
+            name: '-5eb5760f'
+            widget: string
+          - hint: 'Original text: Share this post, key: -2c79323f'
+            label: Text
+            name: '-2c79323f'
+            widget: string
+          - hint: 'Original text: Savings, key: -2d247b67'
+            label: Text
+            name: '-2d247b67'
+            widget: string
+          - hint: 'Original text: Borrowing, key: -64563253'
+            label: Text
+            name: '-64563253'
+            widget: string
+          - hint: 'Original text: Loans, key: 462e963'
+            label: Text
+            name: '462e963'
+            widget: string
+          - hint: 'Original text: Olivia Rhye, key: d4946c0'
+            label: Text
+            name: d4946c0
+            widget: string
+          - hint: 'Original text: Resources and insights, key: -39f9dc1'
+            label: Text
+            name: '-39f9dc1'
+            widget: string
+          - hint: >-
+              Original text: The latest borrowing, loans and savings tip -
+              straight to your inbox., key: -42759886
+            label: Text
+            name: '-42759886'
             widget: string
       - label: Links
         name: links
@@ -609,9 +2378,98 @@ collections:
             name: title
             widget: hidden
             default: Links
+          - hint: 'Original link: /, key: 2f'
+            label: Link
+            name: 2f
+            widget: string
+          - hint: 'Original link: /state/, key: -7eed5153'
+            label: Link
+            name: '-7eed5153'
+            widget: string
+          - hint: 'Original link: /city/, key: 55d85955'
+            label: Link
+            name: 55d85955
+            widget: string
+          - hint: 'Original link: /companies/, key: 236f2b23'
+            label: Link
+            name: 236f2b23
+            widget: string
+          - hint: 'Original link: /resources/, key: 5c7d819'
+            label: Link
+            name: 5c7d819
+            widget: string
+          - hint: 'Original link: /about/, key: 61642f31'
+            label: Link
+            name: 61642f31
+            widget: string
           - hint: 'Original link: #, key: 23'
             label: Link
             name: '23'
+            widget: string
+          - hint: 'Original link: /apply-now/, key: 588e1487'
+            label: Link
+            name: '588e1487'
+            widget: string
+          - hint: 'Original link: /payday-loans/, key: -2572c6ca'
+            label: Link
+            name: '-2572c6ca'
+            widget: string
+          - hint: 'Original link: /careers/, key: 38288f49'
+            label: Link
+            name: 38288f49
+            widget: string
+          - hint: 'Original link: /contact-us/, key: 6bfbaa95'
+            label: Link
+            name: 6bfbaa95
+            widget: string
+          - hint: 'Original link: /sitemap/, key: 60da4b49'
+            label: Link
+            name: 60da4b49
+            widget: string
+          - hint: 'Original link: /faqs/, key: 55fef0e3'
+            label: Link
+            name: 55fef0e3
+            widget: string
+          - hint: 'Original link: /accessibility-policy/, key: 1a3dbaef'
+            label: Link
+            name: 1a3dbaef
+            widget: string
+          - hint: >-
+              Original link: /california-consumer-privacy-act-ccpa/, key:
+              f99064d
+            label: Link
+            name: f99064d
+            widget: string
+          - hint: 'Original link: /do-not-sell-my-personal-information/, key: 1947e1d'
+            label: Link
+            name: 1947e1d
+            widget: string
+          - hint: 'Original link: /terms-and-conditions/, key: -237f3f94'
+            label: Link
+            name: '-237f3f94'
+            widget: string
+          - hint: 'Original link: /privacy-policy/, key: -2f934417'
+            label: Link
+            name: '-2f934417'
+            widget: string
+          - hint: 'Original link: #state, key: 4244624e'
+            label: Link
+            name: 4244624e
+            widget: string
+          - hint: 'Original link: #city, key: 21bd00e'
+            label: Link
+            name: 21bd00e
+            widget: string
+          - hint: 'Original link: #stores, key: 64e3d95'
+            label: Link
+            name: 64e3d95
+            widget: string
+          - hint: >-
+              Original link:
+              mailto:recruitment@quidzu.com?subject=I'm%20interested%20in%20a%20position%20at%20Quidzu,
+              key: 5b1ea121
+            label: Link
+            name: 5b1ea121
             widget: string
       - label: Images
         name: images
@@ -621,6 +2479,45 @@ collections:
             name: title
             widget: hidden
             default: Images
+          - label: Image
+            name: 58a3f9a4
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '13946645'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: i4922bfae
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
           - label: Image
             name: '71252639'
             widget: object
@@ -635,7 +2532,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: '-110e95aa'
+            name: 4b35613b
             widget: object
             fields:
               - name: url
@@ -648,7 +2545,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: '-7a88968b'
+            name: 46ee92fa
             widget: object
             fields:
               - name: url
@@ -674,7 +2571,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: '-180ce3ef'
+            name: 1e3f1704
             widget: object
             fields:
               - name: url
@@ -687,7 +2584,59 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: '-750b8895'
+            name: 5dfa8bf6
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 5bcdd4d0
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-3c7ca245'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-51dc135b'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-169e212c'
             widget: object
             fields:
               - name: url
