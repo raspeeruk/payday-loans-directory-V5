@@ -1,0 +1,18 @@
+---
+f_zip-code: 97306
+f_state-code: OR
+title: Fastbucks-17909
+f_phone: 503-363-2825
+f_city-only: Salem
+f_address: 5247 Commercial Street Se Salem
+f_location-unique-id: '17909'
+slug: fastbucks-17909
+updated-on: '2024-05-30T13:46:58.046Z'
+created-on: '2024-05-30T13:36:59.803Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city-state: cms/city/salem-or.md
+f_company: cms/company/fastbucks.md
+f_state: cms/state/oregon.md
+layout: '[payday-loan].html'
+tags: payday-loan
+---

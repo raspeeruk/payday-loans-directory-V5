@@ -1,0 +1,18 @@
+---
+f_zip-code: 6519
+f_state-code: CT
+title: American Cash Exchange-4163
+f_phone: 203-782-2274
+f_city-only: New Haven
+f_address: 696 Howard Avenue New Haven
+f_location-unique-id: '4163'
+slug: american-cash-exchange-4163
+updated-on: '2024-05-30T13:46:58.046Z'
+created-on: '2024-05-30T13:36:59.803Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city-state: cms/city/new-haven-ct.md
+f_company: cms/company/american-cash-exchange.md
+f_state: cms/state/connecticut.md
+layout: '[payday-loan].html'
+tags: payday-loan
+---

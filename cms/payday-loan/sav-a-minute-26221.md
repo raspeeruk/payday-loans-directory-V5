@@ -1,0 +1,18 @@
+---
+f_zip-code: 39428
+f_state-code: MS
+title: Sav A Minute-26221
+f_phone: 601-765-0729
+f_city-only: Collins
+f_address: 200 N Fir Ave Collins
+f_location-unique-id: '26221'
+slug: sav-a-minute-26221
+updated-on: '2024-05-30T13:46:58.046Z'
+created-on: '2024-05-30T13:36:59.803Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city-state: cms/city/collins-ms.md
+f_company: cms/company/sav-a-minute.md
+f_state: cms/state/mississippi.md
+layout: '[payday-loan].html'
+tags: payday-loan
+---

@@ -1,0 +1,18 @@
+---
+f_zip-code: 95695
+f_state-code: CA
+title: Check Max Plus-13889
+f_phone: 530-666-7711
+f_city-only: Woodland
+f_address: 11 Purity Plz Woodland
+f_location-unique-id: '13889'
+slug: check-max-plus-13889
+updated-on: '2024-05-30T13:46:58.046Z'
+created-on: '2024-05-30T13:36:59.803Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city-state: cms/city/woodland-ca.md
+f_company: cms/company/check-max-plus.md
+f_state: cms/state/california.md
+layout: '[payday-loan].html'
+tags: payday-loan
+---

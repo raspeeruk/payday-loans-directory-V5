@@ -1,0 +1,18 @@
+---
+f_zip-code: 36401
+f_state-code: AL
+title: Pay Day Cash Advance-23514
+f_phone: 251-578-5055
+f_city-only: Evergreen
+f_address: 820 Liberty Hill Drive Evergreen
+f_location-unique-id: '23514'
+slug: pay-day-cash-advance-23514
+updated-on: '2024-05-30T13:46:58.046Z'
+created-on: '2024-05-30T13:36:59.803Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city-state: cms/city/evergreen-al.md
+f_company: cms/company/pay-day-cash-advance.md
+f_state: cms/state/alabama.md
+layout: '[payday-loan].html'
+tags: payday-loan
+---

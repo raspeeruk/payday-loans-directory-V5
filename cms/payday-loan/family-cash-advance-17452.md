@@ -1,0 +1,18 @@
+---
+f_zip-code: 38320
+f_state-code: TN
+title: Family Cash Advance-17452
+f_phone: 731-584-9901
+f_city-only: Camden
+f_address: 168 West Main Street Camden
+f_location-unique-id: '17452'
+slug: family-cash-advance-17452
+updated-on: '2024-05-30T13:46:58.046Z'
+created-on: '2024-05-30T13:36:59.803Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city-state: cms/city/camden-tn.md
+f_company: cms/company/family-cash-advance.md
+f_state: cms/state/tennessee.md
+layout: '[payday-loan].html'
+tags: payday-loan
+---

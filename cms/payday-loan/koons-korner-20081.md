@@ -1,0 +1,18 @@
+---
+f_zip-code: 35010
+f_state-code: AL
+title: Koons Korner-20081
+f_phone: 256-234-3557
+f_city-only: Alexander City
+f_address: 1442 Hillabee Street Alexander City
+f_location-unique-id: '20081'
+slug: koons-korner-20081
+updated-on: '2024-05-30T13:46:58.046Z'
+created-on: '2024-05-30T13:36:59.803Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city-state: cms/city/alexander-city-al.md
+f_company: cms/company/koons-korner.md
+f_state: cms/state/alabama.md
+layout: '[payday-loan].html'
+tags: payday-loan
+---

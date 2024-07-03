@@ -1,0 +1,18 @@
+---
+f_zip-code: 62301
+f_state-code: IL
+title: Bad Check Diversion Corp-5096
+f_phone: 217-223-8475
+f_city-only: Quincy
+f_address: 201 N 3rd Street Quincy
+f_location-unique-id: '5096'
+slug: bad-check-diversion-corp-5096
+updated-on: '2024-05-30T13:46:58.046Z'
+created-on: '2024-05-30T13:36:59.803Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city-state: cms/city/quincy-il.md
+f_company: cms/company/bad-check-diversion-corp.md
+f_state: cms/state/illinois.md
+layout: '[payday-loan].html'
+tags: payday-loan
+---

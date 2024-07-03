@@ -1,0 +1,18 @@
+---
+f_zip-code: 81008
+f_state-code: CO
+title: Ms Paycheck Inc-22402
+f_phone: 719-583-2274
+f_city-only: Pueblo
+f_address: 2908 N Elizabeth Street Pueblo
+f_location-unique-id: '22402'
+slug: ms-paycheck-inc-22402
+updated-on: '2024-05-30T13:46:58.046Z'
+created-on: '2024-05-30T13:36:59.803Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city-state: cms/city/pueblo-co.md
+f_company: cms/company/ms-paycheck-inc.md
+f_state: cms/state/colorado.md
+layout: '[payday-loan].html'
+tags: payday-loan
+---

@@ -1,0 +1,18 @@
+---
+f_zip-code: 74464
+f_state-code: OK
+title: Cherokee Hills Finance Co Inc-14920
+f_phone: 918-456-3724
+f_city-only: Tahlequah
+f_address: 1020 S Muskogee Ave Tahlequah
+f_location-unique-id: '14920'
+slug: cherokee-hills-finance-co-inc-14920
+updated-on: '2024-05-30T13:46:58.046Z'
+created-on: '2024-05-30T13:36:59.803Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city-state: cms/city/tahlequah-ok.md
+f_company: cms/company/cherokee-hills-finance-co-inc.md
+f_state: cms/state/oklahoma.md
+layout: '[payday-loan].html'
+tags: payday-loan
+---

@@ -1,0 +1,18 @@
+---
+f_zip-code: 44501
+f_state-code: OH
+title: Cash Depot-7016
+f_phone: 330-965-6602
+f_city-only: Youngstown
+f_address: On Rt 224 Youngstown
+f_location-unique-id: '7016'
+slug: cash-depot-7016
+updated-on: '2024-05-30T13:46:58.046Z'
+created-on: '2024-05-30T13:36:59.803Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city-state: cms/city/youngstown-oh.md
+f_company: cms/company/cash-depot.md
+f_state: cms/state/ohio.md
+layout: '[payday-loan].html'
+tags: payday-loan
+---

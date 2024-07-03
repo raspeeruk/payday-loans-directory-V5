@@ -1,0 +1,18 @@
+---
+f_zip-code: 63801
+f_state-code: MO
+title: Tri County Quick Cash Crt Svc-27933
+f_phone: 573-471-0242
+f_city-only: Sikeston
+f_address: 516 S Main Street Sikeston
+f_location-unique-id: '27933'
+slug: tri-county-quick-cash-crt-svc-27933
+updated-on: '2024-05-30T13:46:58.046Z'
+created-on: '2024-05-30T13:36:59.803Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city-state: cms/city/sikeston-mo.md
+f_company: cms/company/tri-county-quick-cash-crt-svc.md
+f_state: cms/state/missouri.md
+layout: '[payday-loan].html'
+tags: payday-loan
+---

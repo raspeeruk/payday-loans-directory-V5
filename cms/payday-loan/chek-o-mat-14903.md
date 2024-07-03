@@ -1,0 +1,18 @@
+---
+f_zip-code: 32401
+f_state-code: FL
+title: Chek O Mat-14903
+f_phone: 850-785-0522
+f_city-only: Panama City
+f_address: 235 N Tyndall Pkwy Panama City
+f_location-unique-id: '14903'
+slug: chek-o-mat-14903
+updated-on: '2024-05-30T13:46:58.046Z'
+created-on: '2024-05-30T13:36:59.803Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city-state: cms/city/panama-city-fl.md
+f_company: cms/company/chek-o-mat.md
+f_state: cms/state/florida.md
+layout: '[payday-loan].html'
+tags: payday-loan
+---

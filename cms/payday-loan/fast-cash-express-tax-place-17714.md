@@ -1,0 +1,18 @@
+---
+f_zip-code: 44857
+f_state-code: OH
+title: Fast Cash Express Tax Place-17714
+f_phone: 419-660-1500
+f_city-only: Norwalk
+f_address: 4925 Ushighway 250 North Norwalk
+f_location-unique-id: '17714'
+slug: fast-cash-express-tax-place-17714
+updated-on: '2024-05-30T13:46:58.046Z'
+created-on: '2024-05-30T13:36:59.803Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city-state: cms/city/norwalk-oh.md
+f_company: cms/company/fast-cash-express-tax-place.md
+f_state: cms/state/ohio.md
+layout: '[payday-loan].html'
+tags: payday-loan
+---

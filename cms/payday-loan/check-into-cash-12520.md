@@ -1,0 +1,18 @@
+---
+f_zip-code: 23320
+f_state-code: VA
+title: Check Into Cash-12520
+f_phone: 757-547-1221
+f_city-only: Chesapeake
+f_address: 1200 N Battlefield Blvd Suite 103-104 Chesapeake
+f_location-unique-id: '12520'
+slug: check-into-cash-12520
+updated-on: '2024-05-30T13:46:58.046Z'
+created-on: '2024-05-30T13:36:59.803Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city-state: cms/city/chesapeake-va.md
+f_company: cms/company/check-into-cash.md
+f_state: cms/state/virginia.md
+layout: '[payday-loan].html'
+tags: payday-loan
+---

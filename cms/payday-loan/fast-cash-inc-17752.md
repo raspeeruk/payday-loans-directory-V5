@@ -1,0 +1,18 @@
+---
+f_zip-code: 71107
+f_state-code: LA
+title: Fast Cash Inc-17752
+f_phone: 318-222-7912
+f_city-only: Shreveport
+f_address: 1850 Nelson Street Shreveport
+f_location-unique-id: '17752'
+slug: fast-cash-inc-17752
+updated-on: '2024-05-30T13:46:58.046Z'
+created-on: '2024-05-30T13:36:59.803Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city-state: cms/city/shreveport-la.md
+f_company: cms/company/fast-cash-inc.md
+f_state: cms/state/louisiana.md
+layout: '[payday-loan].html'
+tags: payday-loan
+---

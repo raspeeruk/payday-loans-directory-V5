@@ -1,0 +1,18 @@
+---
+f_zip-code: 40403
+f_state-code: KY
+title: First American Holding Inc-18411
+f_phone: 859-985-0939
+f_city-only: Berea
+f_address: 222 Brenwood Street Berea
+f_location-unique-id: '18411'
+slug: first-american-holding-inc-18411
+updated-on: '2024-05-30T13:46:58.046Z'
+created-on: '2024-05-30T13:36:59.803Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city-state: cms/city/berea-ky.md
+f_company: cms/company/first-american-holding-inc.md
+f_state: cms/state/kentucky.md
+layout: '[payday-loan].html'
+tags: payday-loan
+---

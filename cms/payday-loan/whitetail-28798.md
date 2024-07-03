@@ -1,0 +1,18 @@
+---
+f_zip-code: 82716
+f_state-code: WY
+title: Whitetail-28798
+f_phone: 307-682-7677
+f_city-only: Gillette
+f_address: 801 East 4Th Street Suite 13 Gillette
+f_location-unique-id: '28798'
+slug: whitetail-28798
+updated-on: '2024-05-30T13:46:58.046Z'
+created-on: '2024-05-30T13:36:59.803Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city-state: cms/city/gillette-wy.md
+f_company: cms/company/whitetail.md
+f_state: cms/state/wyoming.md
+layout: '[payday-loan].html'
+tags: payday-loan
+---
