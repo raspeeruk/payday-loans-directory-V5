@@ -1,0 +1,14 @@
+---
+title: Chatsworth-MI
+slug: chatsworth-mi
+f_state:
+- cms/state/michigan.md
+f_locations:
+- cms/payday-loan/aaa-instant-cash-739.md
+updated-on: '2024-05-30T13:41:28.615Z'
+created-on: '2024-05-30T13:41:28.615Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city: Chatsworth
+layout: '[city].html'
+tags: city
+---

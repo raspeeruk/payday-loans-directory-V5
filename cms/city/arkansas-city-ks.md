@@ -1,0 +1,16 @@
+---
+title: Arkansas City-KS
+slug: arkansas-city-ks
+f_state:
+- cms/state/kansas.md
+f_locations:
+- cms/payday-loan/cash-advance-inc-6561.md
+- cms/payday-loan/cash-master-7910.md
+- cms/payday-loan/cash-master-7911.md
+updated-on: '2024-05-30T13:41:28.615Z'
+created-on: '2024-05-30T13:41:28.615Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city: Arkansas City
+layout: '[city].html'
+tags: city
+---
