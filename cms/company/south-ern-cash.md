@@ -1,0 +1,16 @@
+---
+title: South ern Cash
+slug: south-ern-cash
+updated-on: '2024-05-30T13:44:31.749Z'
+created-on: '2024-05-30T13:41:46.671Z'
+published-on: '2024-05-30T13:54:32.469Z'
+f_city-state-2:
+- cms/city/fort-payne-al.md
+f_locations:
+- cms/payday-loan/south-ern-cash-26570.md
+- cms/payday-loan/south-ern-cash-26571.md
+f_states:
+- cms/state/alabama.md
+layout: '[company].html'
+tags: company
+---
